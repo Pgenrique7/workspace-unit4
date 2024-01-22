@@ -6,9 +6,9 @@ import java.util.Random;
 public class ArrayLiterales {
 	
 	
-public static void pintarArrayEnteros (int [] array){
+public static void pintarArrayEnteros (int [] array, int numFinal){
 		
-		for (int i=0; i<array.length; i++) {
+		for (int i=0; i<array.length && array[i]!= numFinal; i++) {
 			
 		if (i==array.length-1) {
 			
@@ -27,15 +27,36 @@ public static void pintarArrayEnteros (int [] array){
 
 	}
 
-	public static int [] creaArrayConNumerosAleatorios (int tam) {
+public static void pintarArrayCadenas (String[] array) {
+	
+	for (int i=0; i<array.length; i++) {
+		
+		if (i==array.length-1) {
+			
+			System.out.format("|%-20s|",array[i]);
+			
+			}
+		
+		else {
+			
+			System.out.format("|%-20s",array[i]);
+			
+			}
+		}
+		
+		System.out.println();
+
+	}
+
+
+	public static int creaArrayConNumerosAleatorios (int tam) {
 		
 		//puedo usar variable de tipo entero para asignar tamaño al array
 		int [] array = new int [tam];
 		
-		tam=
 				
 		//devuelvo la referencia del array
-		return array;
+		return 0;
 	}
 
 
@@ -46,7 +67,7 @@ public static void pintarArrayEnteros (int [] array){
 		
 		int [] arrayDias2 = new int [4];
 		
-		pintarArrayEnteros(arrayDias);
+		pintarArrayEnteros(arrayDias,0);
 		
 		
 
